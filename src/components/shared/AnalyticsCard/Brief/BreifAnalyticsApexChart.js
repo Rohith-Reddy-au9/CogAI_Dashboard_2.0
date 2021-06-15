@@ -1,17 +1,18 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import Chart from "react-apexcharts";
 const TIME_RANGE_IN_MILLISECONDS = 30 * 1000;
 const ADDING_DATA_INTERVAL_IN_MILLISECONDS = 1000;
 const ADDING_DATA_RATIO = 0.8;
-export default (props) => {
+
+const BreifAnalyticsApexChart = () => {
   const nameList = ["a"];
   const defaultDataList = nameList.map((name) => ({
     name: name,
     data: [],
   }));
-  const [dataList, setDataList] = React.useState(defaultDataList);
+  const [dataList, setDataList] = useState(defaultDataList);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const addDataRandomly = (data) => {
       if (Math.random() < 1 - ADDING_DATA_RATIO) {
         return data;
@@ -37,15 +38,16 @@ export default (props) => {
 
     return () => clearInterval(interval);
   });
+
   const options = {
     chart: {
-      dropShadow: {
-        enabled: false,
-        opacity: 0.3,
-        blur: 5,
-        left: -7,
-        top: 22,
-      },
+      // dropShadow: {
+      //   enabled: false,
+      //   opacity: 0.3,
+      //   blur: 5,
+      //   left: -7,
+      //   top: 22,
+      // },
       fill: {
         type: "gradient",
         gradient: {
@@ -69,11 +71,12 @@ export default (props) => {
           speed: 500,
         },
       },
-      foreColor: "#0C184B",
+      foreColor: "aqua",
       toolbar: {
         show: false,
       },
     },
+    
     stroke: {
       curve: "smooth",
     },
@@ -110,3 +113,6 @@ export default (props) => {
     />
   );
 };
+
+
+export default BreifAnalyticsApexChart

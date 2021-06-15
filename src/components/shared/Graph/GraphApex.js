@@ -1,4 +1,6 @@
-import React from "react";
+/* eslint-disable import/no-anonymous-default-export */
+/* eslint-disable no-unused-vars */
+import React, {useState} from "react";
 import Chart from "react-apexcharts";
 const TIME_RANGE_IN_MILLISECONDS = 30 * 1000;
 const ADDING_DATA_INTERVAL_IN_MILLISECONDS = 1000;
@@ -7,10 +9,10 @@ export default (props) => {
   const nameList = ["a", "b", "c"];
   const defaultDataList = nameList.map((name) => ({
     name: name,
-    data: [...Array(10)].map(()=>Math.floor(Math.random()*7)),
+    data: [...Array(12)].map(()=>Math.floor(Math.random()*10)),
     // data:[1,3,4,5,6,7,8,9,10]
   }));
-  const [dataList, setDataList] = React.useState(defaultDataList);
+  const [dataList, setDataList] = useState(defaultDataList);
 //   console.log(dataList)
   const options = {
     chart: {
@@ -86,7 +88,7 @@ export default (props) => {
             fontWeight: 400,
             cssClass: 'apexcharts-yaxis-label',
         }
-     
+    
     },
     },
   };

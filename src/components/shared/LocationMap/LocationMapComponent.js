@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import MapLayout from "../../../assets/icons/Utils/Location/MapLayout.png";
+// import MapLayout from "../../../assets/icons/Utils/Location/MapLayout.png";
 import { CameraIconFill } from "../Icons/CameraIcon";
 import { ModalComponent } from "../Modal/ModalComponent";
 const LocationMapComponent = () => {
@@ -10,7 +10,7 @@ const LocationMapComponent = () => {
   return (
     <div
       style={{
-        backgroundImage: `url(${MapLayout}) `,
+        // backgroundImage: `url(${MapLayout}) `,
         backgroundRepeat: "no-repeat",
         backgroundSize: "100%",
         height: "100%",

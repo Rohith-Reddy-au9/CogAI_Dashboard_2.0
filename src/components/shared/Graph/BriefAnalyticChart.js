@@ -1,5 +1,5 @@
-import { LineChart, Line, Tooltip, XAxis, YAxis } from "recharts";
 import React, { useState,useEffect } from "react";
+import { LineChart, Line, Tooltip, XAxis, YAxis } from "recharts";
 
 // const data = [
 //   { name: "Page A", uv: 4000, pv: 2400, amt: 2400 },
@@ -19,8 +19,8 @@ const limit =5
   const [maxVal, setMaxVal] = useState(0)
   useEffect(() => {
     setTimeout(() => {
-        var val = Math.floor(Math.random() * 10)
-        setMaxVal(vl =>Math.max(vl,val))
+        var val = Math.floor(Math.random() * 15)
+        setMaxVal((vl) =>Math.max(vl,val))
         setPerc(((limit/maxVal)*100))
       setData((cd) => [
         ...cd,

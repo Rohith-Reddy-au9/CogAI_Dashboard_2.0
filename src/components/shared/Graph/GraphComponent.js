@@ -83,7 +83,7 @@ const GraphComponent = () => {
           bottom: 0,
         }}
       >
-        <YAxis min="1" max="7"  tickLine={false} axisLine={false}/>
+        <YAxis min="1" max="7"  tickLine={false} axisLine={false} />
         <linearGradient id="colorPv" x1="0" y1="0" x2="1" y2="0">
           <stop offset="5%" stopColor="#82ca9d" stopOpacity={0} />
           <stop offset="95%" stopColor="#82ca9d" stopOpacity={0} />
@@ -97,7 +97,7 @@ const GraphComponent = () => {
           strokeWidth="5"
           gradientTransform="#00000, #DC4035"
         />
-         <Line
+        <Line
           dot={false}
           isAnimationActive={true}
           type="monotone"

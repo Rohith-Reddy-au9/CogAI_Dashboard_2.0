@@ -6,12 +6,12 @@ import Rewind from './pages/Rewind';
 
 function App() {
   return (
-   <div className="bg-cogAi-bg ">
-     <Nav/>
-     <Home/>
-     {/* <Rewind/> */}
-     {/* <LiveStatus/> */}
-   </div>
+    <div className="bg-cogAi-bg ">
+        <Nav/>
+        <Home/>
+        {/* <Rewind/> 
+        <LiveStatus/> */}
+    </div>
   );
 }
 

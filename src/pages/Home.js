@@ -23,6 +23,8 @@ import {
 } from "../components/shared/Icons/SettingsIcon";
 import LocationMapComponent from "../components/shared/LocationMap/LocationMapComponent";
 import { NotificationAndStatus } from "../components/shared/NotificationsAndStatus/NotificationAndStatus";
+
+
 export const Home = () => {
   const [dashBoard, setDashBoard] = useState(1);
 
@@ -37,6 +39,7 @@ export const Home = () => {
             className="grid grid-cols-2/1  bg-cogAi-bg-dark rounded-lg shadow-lg "
             id="block00"
           >
+
             <div>
               <div className="flex justify-around my-5" id="block000">
                 <div className="flex">
@@ -79,6 +82,7 @@ export const Home = () => {
               </div>
             </div>
 
+
             <div className="" id="block001">
               <div className="flex justify-between my-5 mx-10">
                 {dashBoard === 0 ? (
@@ -110,30 +114,35 @@ export const Home = () => {
                   </div>
                 )}
               </div>
+              
               <div className="divide-y  divide-gray-400 m-10 space-y-2">
                 <BriefAnalyticCard
-                  title="OPERATION ANALYTICS"
+                  title="Operation Analytics"
                   percentage={33}
                   color="red"
                 />
                 <BriefAnalyticCard
-                  title="OPERATION ANALYTICS"
+                  title="Machine ANALYTICS"
                   percentage={33}
                   color="red"
                 />
                 <BriefAnalyticCard
-                  title="OPERATION ANALYTICS"
+                  title="Plant operator ANALYTICS"
                   percentage={33}
                   color="red"
                 />
               </div>
             </div>
           </div>
+
+
           <div className="bg-cogAi-bg rounded-lg shadow-lg" id="block10">
             <div className="flex justify-between">
               <div className="text-white text-3xl my-2">Activity</div>
               <div></div>
             </div>
+
+
             <div className=" grid grid-cols-3 gap-5 ">
               <DetailedAnalyticCard
                 title="Operator Analytics"

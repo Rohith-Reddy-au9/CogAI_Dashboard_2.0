@@ -1,8 +1,8 @@
 import React from "react";
 import { NotificationIcon } from "../../shared/Icons/Notification";
 import { UserIcon } from "../../shared/Icons/User";
-import img1 from '../../../assets/images/image 1.png'
-import img2 from '../../../assets/images/image 2.png'
+// import img1 from '../../../assets/images/image 1.png'
+// import img2 from '../../../assets/images/image 2.png'
 
 export const Nav = () => {
   return (
@@ -12,8 +12,6 @@ export const Nav = () => {
     >
       <div className="grid grid-flow-col items-center m-10">
           <div className="flex m-8">
-        <img src={img1} alt="logo.png" />
-        <img src={img2} alt="logo.png"  />
         </div>
         <a href="#" className="pr-8 ">
           Home
